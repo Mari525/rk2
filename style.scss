@@ -34,7 +34,7 @@ ul {
 			display: flex;
 
 			&__item {
-
+				margin-right: 20px;
 
 				&__link {
 					color: #f7fff7;
@@ -97,13 +97,16 @@ h1, h2, h3 {
 
 			&__list {
 				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
 				align-items: stretch;
-				background-color: #ffe66d;
 
 				&__item {
 					min-width: 300px;
 					max-width: 350px;
 					padding: 20px;
+					background-color: #ffe66d;
+					border-radius: 50px;
 
 					.item {
 						&__heading {
@@ -124,6 +127,7 @@ h1, h2, h3 {
 
 						&__list {
 							list-style-type: disc;
+							padding-left: 20px;
 
 							&__item {
 								
@@ -134,4 +138,17 @@ h1, h2, h3 {
 			}
 		}
 	}
+}
+
+.footer {
+	bottom: 0;
+	margin-top: 200px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-color: #1a535c;
+	color: #f7fff7;
+	text-align: center;
 }
