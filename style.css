@@ -82,6 +82,7 @@ h1, h2, h3 {
 .main {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 30px 0 100px;
 }
 
 .main__heading {
@@ -94,12 +95,12 @@ h1, h2, h3 {
   margin: 0 auto;
 }
 
-.main__blocks .blocks__heading {
+.blocks__heading {
   margin-top: 50px;
   margin-bottom: 40px;
 }
 
-.main__blocks .blocks__list {
+.blocks__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,38 +114,51 @@ h1, h2, h3 {
           align-items: stretch;
 }
 
-.main__blocks .blocks__list__item {
+.blocks__list__item {
   min-width: 300px;
   max-width: 350px;
+  margin-bottom: 20px;
   padding: 20px;
-  background-color: #ffe66d;
   border-radius: 50px;
 }
 
-.main__blocks .blocks__list__item .item__heading {
+.blocks__list__item .item__heading {
   margin-bottom: 20px;
 }
 
-.main__blocks .blocks__list__item .item__img {
+.blocks__list__item .item__img {
   display: block;
   width: 250px;
   margin: 0 auto;
   border-radius: 20px;
 }
 
-.main__blocks .blocks__list__item .item__text {
+.blocks__list__item .item__text {
   margin-top: 30px;
   margin-bottom: 20px;
 }
 
-.main__blocks .blocks__list__item .item__list {
+.blocks__list__item .item__list {
   list-style-type: disc;
   padding-left: 20px;
 }
 
+.main-light .blocks__list__item {
+  background-color: #ffe66d;
+}
+
+.main-dark {
+  color: #f7fff7;
+  background-color: #000000;
+}
+
+.main-dark .blocks__list__item {
+  background-color: #1a535c;
+  color: #f7fff7;
+}
+
 .footer {
   bottom: 0;
-  margin-top: 200px;
   height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
