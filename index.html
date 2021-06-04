@@ -12,7 +12,7 @@
 <body>
 	<header class="header">
 		<div class="header__wrapper">
-			<svg class="header__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1" viewBox="0 0 900 400" xml:space="preserve">
+			<svg class="header__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 900 400" xml:space="preserve">
 	   			<use xlink:href="img/logo.svg#logo" />
 			</svg>
 			<nav class="header__nav">
@@ -25,13 +25,13 @@
 					</li>
 				</ul>
 			</nav>
-			<button class="header__button">Сменить тему</button>
+			<button class="header__button" id="app" @click="themeSwitch">Сменить тему</button>
 		</div>
 	</header>
-	<main class="main">
+	<main class="main main-light">
 		<h1 class="main__heading">Сборка компьютера</h1>
 		<img class="main__img" src="img/main-img.jpg" alt="Компьютер месяца">
-		<section class="main__blocks">
+		<section class="blocks">
 			<h2 class="blocks__heading" id="examples">Примеры сборок</h2>
 			<ul class="blocks__list">
 				<li class="blocks__list__item">
@@ -95,5 +95,6 @@
 	</footer>
 
 	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+	<script src="app.js"></script>
 </body>
 </html>
