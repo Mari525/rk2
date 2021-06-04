@@ -133,6 +133,11 @@ h1, h2, h3 {
   border-radius: 50px;
 }
 
+.blocks__list__item:hover {
+  -webkit-animation: uwu 2s ease;
+          animation: uwu 2s ease;
+}
+
 .blocks__list__item .item__heading {
   margin-bottom: 20px;
 }
@@ -152,6 +157,20 @@ h1, h2, h3 {
 .blocks__list__item .item__list {
   list-style-type: disc;
   padding-left: 20px;
+}
+
+@-webkit-keyframes uwu {
+  50% {
+    -webkit-box-shadow: 0 0 50px #ff6b6b;
+            box-shadow: 0 0 50px #ff6b6b;
+  }
+}
+
+@keyframes uwu {
+  50% {
+    -webkit-box-shadow: 0 0 50px #ff6b6b;
+            box-shadow: 0 0 50px #ff6b6b;
+  }
 }
 
 .main-light .blocks__list__item {
