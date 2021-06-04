@@ -13,6 +13,14 @@ ul {
   list-style: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .header {
   background-color: #1a535c;
 }
@@ -28,6 +36,8 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .header__logo {
@@ -91,6 +101,7 @@ h1, h2, h3 {
 .main__img {
   display: block;
   margin: 0 auto;
+  max-width: 300px;
 }
 
 .blocks__heading {
